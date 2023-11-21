@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 import sys
 
-d_parental = "C:\Users\ghhrr\Documents"
+d_parental = "C:/Users/ghhrr/Documents"
 dirs = ('images', 'video', 'docs', 'audio', 'archives', 'other')
 p_dirs = []
 imgs = []
@@ -34,7 +34,7 @@ def d_creator(parental):
     try:
         for i in dirs:
             path = os.path.join(parental, i)
-            p_dirs = p_dirs.append(path)
+            p_dirs.append(path)
             os.mkdir(path) 
     except FileExistsError:
         pass
